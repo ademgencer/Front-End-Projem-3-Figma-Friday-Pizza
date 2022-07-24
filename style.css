@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2? family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    background-color: #F6ECEC;
+}
+
+.mainContainer {
+    width: 535px;
+    height: 535px;
+    border: ;
+    position: relative;
+    left: 430px;
+    top: 40px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    border: ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navBarLeft {
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: ;
+    margin-left: 24px;
+}
+
+.navBarLeft img {
+    width: 28px;
+    height: 28px;
+}
+
+.navBar ul {
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-right: 30px;
+    font-weight: 400;
+}
+
+.navbar ul li a {
+    color: #00240F;
+}
+
+.navBar ul li a button {
+    background-color: #EC0000;
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    color: #F6ECEC;
+    border-style: none;
+    cursor: pointer;
+    font-size: 10px;
+
+}
+
+.topContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: ;
+    width: 100%;
+    height: 200px;
+    border: ;
+}
+
+.topContent h1 {
+    color: #00240F;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: -3px;
+    line-height: 30px;
+}
+
+.topContent h2 {
+    color: #00240F;
+    font-size: 14px;
+    letter-spacing: -1px;
+    line-height: 50px;
+}
+
+/* Fotoya şeffaf geçiş efekti verilecek 
+2.not: linear gradient ile verildi.*/
+.topContent .margarita {
+    width: 60%;
+    height: 100%;
+    background-image: linear-gradient(to left, transparent, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0)), url(./images/margherita-pizza.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 5px lightslategray;
+}
+
+.topContent .order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 24px;
+    font-size: 10px;
+    background-color: #EC0000;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 16px;
+    cursor: pointer;
+    box-shadow: -2px 2px 5px #ec000046;
+}
+
+.bottomContent {
+    border: ;
+    width: 100%;
+    height: auto;
+}
+
+.bottomContent .headCenter {
+    text-align: center;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+.bottomContent .cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* alt menüdeki ebeveyni cards olan kartları seçtik. */
+.bottomContent .cards>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #00240F;
+    width: 150px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 100px 100px 10px 10px;
+}
+
+
+.bottomContent .cards img {
+    width: 90px;
+    border-radius: 50%;
+}
+
+/* cheese lovers */
+.bottomContent .cards h1 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/* combination... */
+.bottomContent .cards h2 {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 16px;
+}
+
+/* pay 20$ */
+.bottomContent .cards h3 {
+    line-height: 26px;
+    color: #05A84B;
+    font-weight: 600;
+}
+
+.bottomContent .cards select {
+    border-radius: 10px;
+    font-size: 10px;
+    width: 120px;
+
+}
+
+.bottomContent .cards button {
+    font-size: 10px;
+    background-color: #EC0000;
+    border-radius: 12px;
+    color: #fff;
+    width: 120px;
+    padding: 4px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.mainContainer #tomato1 {
+    position: absolute;
+    z-index: -1;
+    width: 80px;
+    left: -30px;
+    bottom: -30px;
+}
+
+.mainContainer #tomato2 {
+    position: absolute;
+    width: 120px;
+    right: -60px;
+    top: 45%;
+}
+
+.mainContainer #yaprak1 {
+    position: absolute;
+    width: 150px;
+    left: -70px;
+    top: 45%;
+}
+
+.mainContainer #yaprak2 {
+    position: absolute;
+    width: 100px;
+    right: -70px;
+    bottom: -70px;
+}
+
+.mainContainer #yaprak3 {
+    position: absolute;
+    width: 70px;
+    top: -15px;
+    left: 38%;
+}
+
+.mainContainer #marka {
+    position: absolute;
+    width: 100px;
+    bottom: -30px;
+    left: 40%;
+}
